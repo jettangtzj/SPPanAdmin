@@ -142,24 +142,24 @@
     	      },
     	      	birthday: {
     	      	date:true,
-    	        required: true
+    	        required: false
     	      },
     	      	telephone: {
-    	        required: true
+    	        required: false
     	      },
     	      	email: {
     	      	email:true,
-    	        required: true
+    	        required: false
     	      },
     	      	address: {
-    	        required: true,
+    	        required: false,
     	        maxlength: 40
     	      },
     	      	locked: {
     	        required: true
     	      },
     	      	description: {
-    	        required: true,
+    	        required: false,
     	        maxlength: 40
     	      }
     	    },

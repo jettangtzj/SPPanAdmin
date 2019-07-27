@@ -56,6 +56,20 @@
                     <li>
                         <a href="#">
                             <i class="fa fa fa-cog"></i>
+                            <span class="nav-label">功能模块</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                         <@shiro.hasPermission name="wechatLog">
+                            <li>
+                               <a class="J_menuItem" href="${ctx!}/admin/wechatLog/index">统计管理</a>
+                            </li>
+                         </@shiro.hasPermission>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa fa-cog"></i>
                             <span class="nav-label">系统管理</span>
                             <span class="fa arrow"></span>
                         </a>
