@@ -40,7 +40,7 @@ public class WechatLogController extends BaseController {
 		String username = (String)session.getAttribute("USERNAME");
 		if(searchText == null)
 			searchText = "%";
-		Page<WechatLog> page = wechatLogService.findAllByUsernameAndAccountLike(username, searchText, getPageRequest());
+		Page<WechatLog> page = wechatLogService.findAllByUsernameAndAccountContaining(username, searchText, getPageRequest());
 		return page;
 	}
 	

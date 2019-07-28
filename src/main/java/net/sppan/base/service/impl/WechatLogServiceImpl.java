@@ -32,14 +32,19 @@ public class WechatLogServiceImpl extends BaseServiceImpl<WechatLog, Integer> im
 	}
 
 	@Override
-	public Page<WechatLog> findAllByUsernameAndAccountLike(String username, String account, PageRequest pageRequest) {
-		return wechatLogDao.findAllByUsernameAndAccountLikeOrderByCreateTimeDesc(username, account, pageRequest);
+	public Page<WechatLog> findAllByUsernameAndAccountContaining(String username, String account, PageRequest pageRequest) {
+		return wechatLogDao.findAllByUsernameAndAccountContainingOrderByCreateTimeDesc(username, account, pageRequest);
 	}
 
 	@Override
 	public void saveOrUpdate(WechatLog wechatLog) {
 		wechatLog.setCreateTime(new Date());
 		save(wechatLog);
+	}
+	
+	@Override
+	public WechatLog findOneByUsernameAndAccountAndNickNameAndCreateTime(String username, String account, String nickName, Date createTime) {
+		return wechatLogDao.findOneByUsernameAndAccountAndNickNameAndCreateTime(username, account, nickName, createTime);
 	}
 	
 }

@@ -1,5 +1,8 @@
 package net.sppan.base.service;
 
+
+import java.util.Date;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
@@ -23,6 +26,15 @@ public interface IWechatLogService extends IBaseService<WechatLog,Integer> {
 	 * @param pageRequest
 	 * @return
 	 */
-	Page<WechatLog> findAllByUsernameAndAccountLike(String searchText1, String searchText2, PageRequest pageRequest);
+	public Page<WechatLog> findAllByUsernameAndAccountContaining(String searchText1, String searchText2, PageRequest pageRequest);
 	
+	/**
+	 * 查询是否重复
+	 * @param username
+	 * @param account
+	 * @param nickName
+	 * @param createTime
+	 * @return
+	 */
+	public WechatLog findOneByUsernameAndAccountAndNickNameAndCreateTime(String username, String account, String nickName, Date createTime);
 }

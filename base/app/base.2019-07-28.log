@@ -1,0 +1,358 @@
+2019-07-28 15:21:39.256 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-07-28 15:21:44.127 [restartedMain] INFO  net.sppan.base.Application - Starting Application on jetdeMacBook-Pro.local with PID 1406 (/Users/jettang/Desktop/workspace/SPPanAdmin/target/classes started by jettang in /Users/jettang/Desktop/workspace/SPPanAdmin)
+2019-07-28 15:21:44.128 [restartedMain] DEBUG net.sppan.base.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-07-28 15:21:44.129 [restartedMain] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2019-07-28 15:21:45.730 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-07-28 15:21:47.149 [restartedMain] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_
+2019-07-28 15:21:47.596 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-07-28 15:21:47.597 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-07-28 15:21:47.673 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-07-28 15:21:48.685 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2019-07-28 15:21:48.696 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2019-07-28 15:21:48.697 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2019-07-28 15:21:48.697 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/
+2019-07-28 15:21:48.708 [restartedMain] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with Configuration Object
+2019-07-28 15:21:48.710 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2019-07-28 15:21:48.715 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2019-07-28 15:21:53.754 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:21:53.754 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:21:53.754 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:21:53.760 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:21:53.760 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:21:53.760 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:21:53.761 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2019-07-28 15:21:53.774 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T
+2019-07-28 15:21:53.774 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/.ehcache-diskstore.lock
+2019-07-28 15:21:53.774 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.data
+2019-07-28 15:21:53.774 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:21:53.779 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/resource%0043ache.index
+2019-07-28 15:21:53.779 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:21:53.816 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2019-07-28 15:21:53.817 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2019-07-28 15:21:53.817 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2019-07-28 15:21:53.817 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2019-07-28 15:21:53.817 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2019-07-28 15:21:53.825 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2019-07-28 15:21:53.826 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2019-07-28 15:21:53.826 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2019-07-28 15:21:53.826 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2019-07-28 15:21:53.827 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2019-07-28 15:21:53.827 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2019-07-28 15:21:53.827 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2019-07-28 15:21:53.827 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2019-07-28 15:21:53.831 [restartedMain] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2019-07-28 15:21:53.831 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2019-07-28 15:21:53.831 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2019-07-28 15:21:55.895 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-18080"]
+2019-07-28 15:21:55.901 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-18080]
+2019-07-28 15:21:55.917 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-07-28 15:21:55.934 [restartedMain] INFO  net.sppan.base.Application - Started Application in 27.008 seconds (JVM running for 32.766)
+2019-07-28 15:21:55.934 [restartedMain] DEBUG net.sppan.base.Application - 启动成功
+2019-07-28 15:22:24.891 [http-nio-18080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-28 15:22:29.430 [http-nio-18080-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:22:29.588 [http-nio-18080-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:22:29.591 [http-nio-18080-exec-10] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-07-28 15:22:29.597 [http-nio-18080-exec-10] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-07-28 15:22:29.599 [http-nio-18080-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:22:29.602 [http-nio-18080-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:22:29.604 [http-nio-18080-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:22:33.791 [http-nio-18080-exec-7] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:22:33.792 [http-nio-18080-exec-7] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-07-28 15:22:33.793 [http-nio-18080-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-07-28 15:22:33.876 [http-nio-18080-exec-8] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and (wechatlog0_.account like ?) order by wechatlog0_.create_time desc limit ?
+2019-07-28 15:23:07.410 [http-nio-18080-exec-9] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and (wechatlog0_.account like ?) order by wechatlog0_.create_time desc limit ?
+2019-07-28 15:26:28.394 [Thread-9] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-07-28 15:27:14.934 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-07-28 15:27:19.814 [restartedMain] INFO  net.sppan.base.Application - Starting Application on jetdeMacBook-Pro.local with PID 1430 (/Users/jettang/Desktop/workspace/SPPanAdmin/target/classes started by jettang in /Users/jettang/Desktop/workspace/SPPanAdmin)
+2019-07-28 15:27:19.815 [restartedMain] DEBUG net.sppan.base.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-07-28 15:27:19.816 [restartedMain] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2019-07-28 15:27:21.148 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-07-28 15:27:22.506 [restartedMain] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_
+2019-07-28 15:27:22.904 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-07-28 15:27:22.905 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-07-28 15:27:22.973 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-07-28 15:27:23.915 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2019-07-28 15:27:23.924 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2019-07-28 15:27:23.924 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2019-07-28 15:27:23.925 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/
+2019-07-28 15:27:23.933 [restartedMain] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with Configuration Object
+2019-07-28 15:27:23.934 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2019-07-28 15:27:23.939 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2019-07-28 15:27:28.967 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:27:28.967 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:27:28.967 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:27:28.971 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:27:28.971 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:27:28.971 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:27:28.972 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2019-07-28 15:27:28.982 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T
+2019-07-28 15:27:28.983 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/.ehcache-diskstore.lock
+2019-07-28 15:27:28.983 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.data
+2019-07-28 15:27:28.983 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:27:28.986 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/resource%0043ache.index
+2019-07-28 15:27:28.987 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:27:29.016 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2019-07-28 15:27:29.017 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2019-07-28 15:27:29.017 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2019-07-28 15:27:29.017 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2019-07-28 15:27:29.018 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2019-07-28 15:27:29.025 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2019-07-28 15:27:29.026 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2019-07-28 15:27:29.026 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2019-07-28 15:27:29.026 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2019-07-28 15:27:29.027 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2019-07-28 15:27:29.027 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2019-07-28 15:27:29.027 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2019-07-28 15:27:29.027 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2019-07-28 15:27:29.030 [restartedMain] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2019-07-28 15:27:29.031 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2019-07-28 15:27:29.031 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2019-07-28 15:27:31.073 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-18080"]
+2019-07-28 15:27:31.083 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-18080]
+2019-07-28 15:27:31.107 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-07-28 15:27:31.126 [restartedMain] INFO  net.sppan.base.Application - Started Application in 26.481 seconds (JVM running for 32.091)
+2019-07-28 15:27:31.126 [restartedMain] DEBUG net.sppan.base.Application - 启动成功
+2019-07-28 15:27:36.749 [http-nio-18080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-28 15:27:36.919 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:27:36.928 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-07-28 15:27:36.934 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-07-28 15:27:36.936 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:27:36.939 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:27:36.941 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:27:39.063 [http-nio-18080-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:27:39.065 [http-nio-18080-exec-6] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-07-28 15:27:39.066 [http-nio-18080-exec-6] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-07-28 15:27:39.174 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and (wechatlog0_.account like ?) order by wechatlog0_.create_time desc limit ?
+2019-07-28 15:27:42.271 [http-nio-18080-exec-9] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and (wechatlog0_.account like ?) order by wechatlog0_.create_time desc limit ?
+2019-07-28 15:27:44.678 [http-nio-18080-exec-2] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and (wechatlog0_.account like ?) order by wechatlog0_.create_time desc limit ?
+2019-07-28 15:27:48.210 [http-nio-18080-exec-6] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and (wechatlog0_.account like ?) order by wechatlog0_.create_time desc limit ?
+2019-07-28 15:30:26.772 [Thread-9] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-07-28 15:36:19.751 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-07-28 15:36:24.636 [restartedMain] INFO  net.sppan.base.Application - Starting Application on jetdeMacBook-Pro.local with PID 1434 (/Users/jettang/Desktop/workspace/SPPanAdmin/target/classes started by jettang in /Users/jettang/Desktop/workspace/SPPanAdmin)
+2019-07-28 15:36:24.637 [restartedMain] DEBUG net.sppan.base.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-07-28 15:36:24.637 [restartedMain] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2019-07-28 15:36:25.916 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-07-28 15:36:27.248 [restartedMain] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_
+2019-07-28 15:36:27.642 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-07-28 15:36:27.642 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-07-28 15:36:27.712 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-07-28 15:36:28.664 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2019-07-28 15:36:28.674 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2019-07-28 15:36:28.674 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2019-07-28 15:36:28.674 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/
+2019-07-28 15:36:28.681 [restartedMain] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with Configuration Object
+2019-07-28 15:36:28.682 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2019-07-28 15:36:28.686 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2019-07-28 15:36:33.719 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:36:33.719 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:36:33.719 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:36:33.723 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:36:33.723 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:36:33.724 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:36:33.724 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2019-07-28 15:36:33.735 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T
+2019-07-28 15:36:33.735 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/.ehcache-diskstore.lock
+2019-07-28 15:36:33.735 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.data
+2019-07-28 15:36:33.735 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:36:33.739 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/resource%0043ache.index
+2019-07-28 15:36:33.739 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:36:33.767 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2019-07-28 15:36:33.768 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2019-07-28 15:36:33.768 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2019-07-28 15:36:33.768 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2019-07-28 15:36:33.768 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2019-07-28 15:36:33.776 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2019-07-28 15:36:33.777 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2019-07-28 15:36:33.777 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2019-07-28 15:36:33.778 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2019-07-28 15:36:33.778 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2019-07-28 15:36:33.778 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2019-07-28 15:36:33.778 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2019-07-28 15:36:33.779 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2019-07-28 15:36:33.782 [restartedMain] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2019-07-28 15:36:33.782 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2019-07-28 15:36:33.782 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2019-07-28 15:36:35.855 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-18080"]
+2019-07-28 15:36:35.861 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-18080]
+2019-07-28 15:36:35.877 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-07-28 15:36:35.893 [restartedMain] INFO  net.sppan.base.Application - Started Application in 26.447 seconds (JVM running for 32.037)
+2019-07-28 15:36:35.893 [restartedMain] DEBUG net.sppan.base.Application - 启动成功
+2019-07-28 15:36:48.012 [http-nio-18080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-28 15:36:48.184 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:36:48.194 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-07-28 15:36:48.201 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-07-28 15:36:48.333 [http-nio-18080-exec-2] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and (wechatlog0_.account like ?) order by wechatlog0_.create_time desc limit ?
+2019-07-28 15:36:50.402 [http-nio-18080-exec-10] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and (wechatlog0_.account like ?) order by wechatlog0_.create_time desc limit ?
+2019-07-28 15:36:51.945 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and (wechatlog0_.account like ?) order by wechatlog0_.create_time desc limit ?
+2019-07-28 15:37:46.626 [http-nio-18080-exec-4] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and wechatlog0_.account=? and wechatlog0_.nick_name=? and wechatlog0_.create_time=?
+2019-07-28 15:37:46.642 [http-nio-18080-exec-4] DEBUG org.hibernate.SQL - insert into tb_wechatlog (account, create_time, nick_name, username) values (?, ?, ?, ?)
+2019-07-28 15:38:08.891 [Thread-9] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-07-28 15:39:55.514 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-07-28 15:40:00.397 [restartedMain] INFO  net.sppan.base.Application - Starting Application on jetdeMacBook-Pro.local with PID 1439 (/Users/jettang/Desktop/workspace/SPPanAdmin/target/classes started by jettang in /Users/jettang/Desktop/workspace/SPPanAdmin)
+2019-07-28 15:40:00.398 [restartedMain] DEBUG net.sppan.base.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-07-28 15:40:00.399 [restartedMain] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2019-07-28 15:40:01.664 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-07-28 15:40:02.980 [restartedMain] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_
+2019-07-28 15:40:03.362 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-07-28 15:40:03.363 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-07-28 15:40:03.430 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-07-28 15:40:04.376 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2019-07-28 15:40:04.386 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2019-07-28 15:40:04.386 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2019-07-28 15:40:04.387 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/
+2019-07-28 15:40:04.395 [restartedMain] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with Configuration Object
+2019-07-28 15:40:04.396 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2019-07-28 15:40:04.400 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2019-07-28 15:40:09.434 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:40:09.434 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:40:09.434 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:40:09.439 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:40:09.439 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:40:09.439 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:40:09.440 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2019-07-28 15:40:09.451 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T
+2019-07-28 15:40:09.451 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/.ehcache-diskstore.lock
+2019-07-28 15:40:09.451 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.data
+2019-07-28 15:40:09.451 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:40:09.455 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/resource%0043ache.index
+2019-07-28 15:40:09.455 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:40:09.483 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2019-07-28 15:40:09.483 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2019-07-28 15:40:09.484 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2019-07-28 15:40:09.484 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2019-07-28 15:40:09.484 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2019-07-28 15:40:09.491 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2019-07-28 15:40:09.492 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2019-07-28 15:40:09.492 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2019-07-28 15:40:09.493 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2019-07-28 15:40:09.493 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2019-07-28 15:40:09.493 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2019-07-28 15:40:09.493 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2019-07-28 15:40:09.494 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2019-07-28 15:40:09.496 [restartedMain] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2019-07-28 15:40:09.497 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2019-07-28 15:40:09.497 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2019-07-28 15:40:11.542 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-18080"]
+2019-07-28 15:40:11.548 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-18080]
+2019-07-28 15:40:11.563 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-07-28 15:40:11.579 [restartedMain] INFO  net.sppan.base.Application - Started Application in 26.355 seconds (JVM running for 31.941)
+2019-07-28 15:40:11.579 [restartedMain] DEBUG net.sppan.base.Application - 启动成功
+2019-07-28 15:40:18.033 [http-nio-18080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-28 15:41:09.658 [Thread-9] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-07-28 15:42:11.942 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-07-28 15:42:16.826 [restartedMain] INFO  net.sppan.base.Application - Starting Application on jetdeMacBook-Pro.local with PID 1441 (/Users/jettang/Desktop/workspace/SPPanAdmin/target/classes started by jettang in /Users/jettang/Desktop/workspace/SPPanAdmin)
+2019-07-28 15:42:16.827 [restartedMain] DEBUG net.sppan.base.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-07-28 15:42:16.827 [restartedMain] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2019-07-28 15:42:18.078 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-07-28 15:42:19.396 [restartedMain] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_
+2019-07-28 15:42:19.777 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-07-28 15:42:19.778 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-07-28 15:42:19.845 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-07-28 15:42:20.816 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2019-07-28 15:42:20.826 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2019-07-28 15:42:20.826 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2019-07-28 15:42:20.827 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/
+2019-07-28 15:42:20.836 [restartedMain] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with Configuration Object
+2019-07-28 15:42:20.838 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2019-07-28 15:42:20.842 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2019-07-28 15:42:25.875 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:42:25.875 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:42:25.875 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:42:25.879 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:42:25.880 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:42:25.880 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:42:25.880 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2019-07-28 15:42:25.892 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T
+2019-07-28 15:42:25.892 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/.ehcache-diskstore.lock
+2019-07-28 15:42:25.892 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.data
+2019-07-28 15:42:25.892 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:42:25.895 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/resource%0043ache.index
+2019-07-28 15:42:25.895 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:42:25.924 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2019-07-28 15:42:25.924 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2019-07-28 15:42:25.925 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2019-07-28 15:42:25.925 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2019-07-28 15:42:25.925 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2019-07-28 15:42:25.932 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2019-07-28 15:42:25.933 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2019-07-28 15:42:25.933 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2019-07-28 15:42:25.934 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2019-07-28 15:42:25.934 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2019-07-28 15:42:25.934 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2019-07-28 15:42:25.935 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2019-07-28 15:42:25.935 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2019-07-28 15:42:25.939 [restartedMain] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2019-07-28 15:42:25.939 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2019-07-28 15:42:25.939 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2019-07-28 15:42:28.008 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-18080"]
+2019-07-28 15:42:28.015 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-18080]
+2019-07-28 15:42:28.031 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-07-28 15:42:28.046 [restartedMain] INFO  net.sppan.base.Application - Started Application in 26.382 seconds (JVM running for 31.975)
+2019-07-28 15:42:28.046 [restartedMain] DEBUG net.sppan.base.Application - 启动成功
+2019-07-28 15:42:34.489 [http-nio-18080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-28 15:42:34.562 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and wechatlog0_.account=? and wechatlog0_.nick_name=? and wechatlog0_.create_time=?
+2019-07-28 15:43:40.065 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - insert into tb_wechatlog (account, create_time, nick_name, username) values (?, ?, ?, ?)
+2019-07-28 15:43:48.130 [RMI TCP Connection(4)-127.0.0.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-07-28 15:47:40.859 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-07-28 15:47:45.719 [restartedMain] INFO  net.sppan.base.Application - Starting Application on jetdeMacBook-Pro.local with PID 1468 (/Users/jettang/Desktop/workspace/SPPanAdmin/target/classes started by jettang in /Users/jettang/Desktop/workspace/SPPanAdmin)
+2019-07-28 15:47:45.721 [restartedMain] DEBUG net.sppan.base.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-07-28 15:47:45.721 [restartedMain] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2019-07-28 15:47:46.987 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-07-28 15:47:48.321 [restartedMain] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_
+2019-07-28 15:47:48.704 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-07-28 15:47:48.705 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-07-28 15:47:48.778 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-07-28 15:47:49.707 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2019-07-28 15:47:49.716 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2019-07-28 15:47:49.716 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2019-07-28 15:47:49.717 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/
+2019-07-28 15:47:49.725 [restartedMain] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with Configuration Object
+2019-07-28 15:47:49.726 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2019-07-28 15:47:49.730 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2019-07-28 15:47:54.760 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:47:54.760 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:47:54.760 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:47:54.765 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-07-28 15:47:54.765 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-07-28 15:47:54.765 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-07-28 15:47:54.766 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2019-07-28 15:47:54.777 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T
+2019-07-28 15:47:54.777 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/.ehcache-diskstore.lock
+2019-07-28 15:47:54.777 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.data
+2019-07-28 15:47:54.777 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:47:54.781 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/7q/5hzfsjpd6t17tzzv_3yybtk40000gn/T/resource%0043ache.index
+2019-07-28 15:47:54.781 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-07-28 15:47:54.810 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2019-07-28 15:47:54.811 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2019-07-28 15:47:54.811 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2019-07-28 15:47:54.811 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2019-07-28 15:47:54.811 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2019-07-28 15:47:54.820 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2019-07-28 15:47:54.820 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2019-07-28 15:47:54.821 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2019-07-28 15:47:54.821 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2019-07-28 15:47:54.821 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2019-07-28 15:47:54.822 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2019-07-28 15:47:54.822 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2019-07-28 15:47:54.822 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2019-07-28 15:47:54.827 [restartedMain] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2019-07-28 15:47:54.827 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2019-07-28 15:47:54.827 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2019-07-28 15:47:56.868 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-18080"]
+2019-07-28 15:47:56.874 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-18080]
+2019-07-28 15:47:56.889 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-07-28 15:47:56.903 [restartedMain] INFO  net.sppan.base.Application - Started Application in 26.375 seconds (JVM running for 31.992)
+2019-07-28 15:47:56.903 [restartedMain] DEBUG net.sppan.base.Application - 启动成功
+2019-07-28 15:48:03.203 [http-nio-18080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-28 15:48:03.279 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and wechatlog0_.account=? and wechatlog0_.nick_name=? and wechatlog0_.create_time=?
+2019-07-28 15:48:52.705 [http-nio-18080-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-07-28 15:48:52.713 [http-nio-18080-exec-4] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-07-28 15:48:52.718 [http-nio-18080-exec-4] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-07-28 15:48:52.811 [http-nio-18080-exec-10] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and (wechatlog0_.account like ?) order by wechatlog0_.create_time desc limit ?
+2019-07-28 15:48:56.002 [http-nio-18080-exec-6] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and wechatlog0_.account=? and wechatlog0_.nick_name=? and wechatlog0_.create_time=?
+2019-07-28 15:48:59.514 [http-nio-18080-exec-2] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and wechatlog0_.account=? and wechatlog0_.nick_name=? and wechatlog0_.create_time=?
+2019-07-28 15:49:00.998 [http-nio-18080-exec-1] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and wechatlog0_.account=? and wechatlog0_.nick_name=? and wechatlog0_.create_time=?
+2019-07-28 15:49:01.972 [http-nio-18080-exec-8] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and wechatlog0_.account=? and wechatlog0_.nick_name=? and wechatlog0_.create_time=?
+2019-07-28 15:49:02.875 [http-nio-18080-exec-9] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and wechatlog0_.account=? and wechatlog0_.nick_name=? and wechatlog0_.create_time=?
+2019-07-28 15:49:03.760 [http-nio-18080-exec-6] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and wechatlog0_.account=? and wechatlog0_.nick_name=? and wechatlog0_.create_time=?
+2019-07-28 15:49:04.490 [http-nio-18080-exec-2] DEBUG org.hibernate.SQL - select wechatlog0_.id as id1_5_, wechatlog0_.account as account2_5_, wechatlog0_.create_time as create_t3_5_, wechatlog0_.nick_name as nick_nam4_5_, wechatlog0_.username as username5_5_ from tb_wechatlog wechatlog0_ where wechatlog0_.username=? and wechatlog0_.account=? and wechatlog0_.nick_name=? and wechatlog0_.create_time=?

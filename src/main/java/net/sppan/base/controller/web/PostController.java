@@ -4,6 +4,9 @@ import net.sppan.base.controller.BaseController;
 import net.sppan.base.entity.WechatLog;
 import net.sppan.base.service.IWechatLogService;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,7 +36,14 @@ public class PostController extends BaseController{
 			if(info.getUsername() == null || info.getUsername().equals("")) {
 				return "fail username cannot be null";
 			}
-			wechatLogService.saveOrUpdate(info);
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+			WechatLog wl = wechatLogService.findOneByUsernameAndAccountAndNickNameAndCreateTime(
+					info.getUsername(), info.getAccount(), info.getNickName(), sdf.parse(sdf.format(new Date())));
+			if(wl != null) {
+				return "fail the data has been recorded.";
+			}else {
+				wechatLogService.saveOrUpdate(info);
+			}
 		}catch(Exception e) {
 			return "fail" + e;
 		}
