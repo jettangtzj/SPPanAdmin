@@ -117,7 +117,7 @@
 			        title: "微信用户名",
 			        field: "account"
 			    },{
-			        title: "添加人",
+			        title: "粉丝微信昵称",
 			        field: "nickName"
 			    },{
 			        title: "日期",
