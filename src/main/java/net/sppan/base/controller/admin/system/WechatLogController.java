@@ -1,6 +1,5 @@
 package net.sppan.base.controller.admin.system;
 
-import net.sppan.base.entity.StaticsByAccount;
 import net.sppan.base.entity.StaticsByDate;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
