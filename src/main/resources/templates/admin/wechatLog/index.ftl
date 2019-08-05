@@ -115,14 +115,20 @@
 			        sortable: true
 			    },{
 			        title: "微信用户名",
-			        field: "account"
+			        field: "account",
+			        sortable: true,
+			        formatter: function(value, row, index){
+			            return "<a href='/admin/wechatLog/accountlist'>"+value+"</a>";
+			        }
 			    },{
 			        title: "粉丝微信昵称",
 			        field: "nickName"
 			    },{
 			        title: "日期",
 			        field: "createTime",
-			        sortable: true
+			        formatter: function(value, row, index){
+                        return "<a href='/admin/wechatLog/datelist'>"+value+"</a>";
+                    }
 			    },{
 			        title: "操作",
 			        field: "empty",

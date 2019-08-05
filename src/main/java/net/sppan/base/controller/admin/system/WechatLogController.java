@@ -1,5 +1,7 @@
 package net.sppan.base.controller.admin.system;
 
+import net.sppan.base.entity.StaticsByAccount;
+import net.sppan.base.entity.StaticsByDate;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
@@ -17,6 +19,8 @@ import net.sppan.base.common.JsonResult;
 import net.sppan.base.controller.BaseController;
 import net.sppan.base.entity.WechatLog;
 import net.sppan.base.service.IWechatLogService;
+
+import java.util.List;
 
 @Controller
 @RequestMapping("/admin/wechatLog")
@@ -54,6 +58,37 @@ public class WechatLogController extends BaseController {
 			return JsonResult.failure(e.getMessage());
 		}
 		return JsonResult.success();
+	}
+
+
+
+	@RequestMapping(value = { "/accountlist" })
+	public String accountList(ModelMap map) {
+		Subject currentUser = SecurityUtils.getSubject();
+		Session session = currentUser.getSession();
+		String username = (String)session.getAttribute("USERNAME");
+		map.put("LIST", wechatLogService.getCountByAccount(username));
+		return "admin/wechatLog/accountList";
+	}
+
+
+	@RequestMapping(value = { "/datelist" })
+	public String dateList(ModelMap map) {
+		Subject currentUser = SecurityUtils.getSubject();
+		Session session = currentUser.getSession();
+		String username = (String)session.getAttribute("USERNAME");
+		map.put("LIST", wechatLogService.getCountByDate(username));
+		return "admin/wechatLog/dateList";
+	}
+
+	@RequestMapping(value = { "/datelistStat" })
+	@ResponseBody
+	public JsonResult dateListStat() {
+		Subject currentUser = SecurityUtils.getSubject();
+		Session session = currentUser.getSession();
+		String username = (String)session.getAttribute("USERNAME");
+		List<StaticsByDate> list = wechatLogService.getCountByDate(username);
+		return JsonResult.success(list);
 	}
 	
 }

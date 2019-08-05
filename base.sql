@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `base` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
+USE `base`;
 -- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
 -- Host: localhost    Database: base
@@ -39,7 +41,7 @@ CREATE TABLE `tb_resource` (
   PRIMARY KEY (`id`),
   KEY `FKf5ra2gn0xedeida2op8097sr5` (`parent_id`),
   CONSTRAINT `FKf5ra2gn0xedeida2op8097sr5` FOREIGN KEY (`parent_id`) REFERENCES `tb_resource` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -48,7 +50,7 @@ CREATE TABLE `tb_resource` (
 
 LOCK TABLES `tb_resource` WRITE;
 /*!40000 ALTER TABLE `tb_resource` DISABLE KEYS */;
-INSERT INTO `tb_resource` VALUES (1,'2017-01-10 13:56:51','用户管理',NULL,0,2,'用户管理',1,'system:user:index','/admin/user/index',1,'2017-01-10 13:59:01',NULL),(2,'2017-01-10 13:56:51','用户编辑',NULL,0,3,'用户编辑',1,'system:user:edit','/admin/user/edit*',2,'2017-01-10 16:26:42',1),(3,'2017-01-11 16:48:48','用户添加',NULL,0,3,'用户添加',2,'system:user:add','/admin/user/add',2,'2017-01-11 16:49:26',1),(4,'2017-01-11 16:48:48','用户删除',NULL,0,3,'用户删除',3,'system:user:deleteBatch','/admin/user/deleteBatch',2,'2017-01-18 14:11:41',1),(5,'2017-01-11 16:48:48','角色分配',NULL,0,3,'角色分配',4,'system:user:grant','/admin/user/grant/**',2,'2017-01-18 14:11:51',1),(6,'2017-01-12 16:45:10','角色管理',NULL,0,2,'角色管理',2,'system:role:index','/admin/role/index',1,'2017-01-12 16:46:52',NULL),(7,'2017-01-12 16:47:02','角色编辑',NULL,0,3,'角色编辑',1,'system:role:edit','/admin/role/edit*',2,'2017-01-18 10:24:06',1),(8,'2017-01-12 16:47:23','角色添加',NULL,0,3,'角色添加',2,'system:role:add','/admin/role/add',2,'2017-01-12 16:49:16',6),(9,'2017-01-12 16:47:23','角色删除',NULL,0,3,'角色删除',3,'system:role:deleteBatch','/admin/role/deleteBatch',2,'2017-01-18 14:12:03',6),(10,'2017-01-12 16:47:23','资源分配',NULL,0,3,'资源分配',4,'system:role:grant','/admin/role/grant/**',2,'2017-01-18 14:12:11',6),(11,'2017-01-17 11:21:12','资源管理',NULL,0,2,'资源管理',3,'system:resource:index','/admin/resource/index',1,'2017-01-17 11:21:42',NULL),(12,'2017-01-17 11:21:52','资源编辑',NULL,0,3,'资源编辑',1,'system:resource:edit','/admin/resource/edit*',2,'2017-01-17 11:22:36',11),(13,'2017-01-17 11:21:54','资源添加',NULL,0,3,'资源添加',2,'system:resource:add','/admin/resource/add',2,'2017-01-17 11:22:39',11),(14,'2017-01-17 11:21:54','资源删除',NULL,0,3,'资源删除',3,'system:resource:deleteBatch','/admin/resource/deleteBatch',2,'2017-01-18 14:12:31',11),(15,'2019-07-27 15:24:40','统计管理',NULL,0,1,'统计管理',1,'wechatLog','/admin/wechatLog',1,'2019-07-27 15:26:03',NULL),(17,'2019-07-27 16:14:12','统计删除',NULL,0,3,'统计删除',3,'system:wechatLog:deleteBatch','/admin/wechatLog/deleteBatch',2,'2019-07-27 16:14:12',15);
+INSERT INTO `tb_resource` VALUES (1,'2017-01-10 13:56:51','用户管理',NULL,0,2,'用户管理',1,'system:user:index','/admin/user/index',1,'2017-01-10 13:59:01',NULL),(2,'2017-01-10 13:56:51','用户编辑',NULL,0,3,'用户编辑',1,'system:user:edit','/admin/user/edit*',2,'2017-01-10 16:26:42',1),(3,'2017-01-11 16:48:48','用户添加',NULL,0,3,'用户添加',2,'system:user:add','/admin/user/add',2,'2017-01-11 16:49:26',1),(4,'2017-01-11 16:48:48','用户删除',NULL,0,3,'用户删除',3,'system:user:deleteBatch','/admin/user/deleteBatch',2,'2017-01-18 14:11:41',1),(5,'2017-01-11 16:48:48','角色分配',NULL,0,3,'角色分配',4,'system:user:grant','/admin/user/grant/**',2,'2017-01-18 14:11:51',1),(6,'2017-01-12 16:45:10','角色管理',NULL,0,2,'角色管理',2,'system:role:index','/admin/role/index',1,'2017-01-12 16:46:52',NULL),(7,'2017-01-12 16:47:02','角色编辑',NULL,0,3,'角色编辑',1,'system:role:edit','/admin/role/edit*',2,'2017-01-18 10:24:06',1),(8,'2017-01-12 16:47:23','角色添加',NULL,0,3,'角色添加',2,'system:role:add','/admin/role/add',2,'2017-01-12 16:49:16',6),(9,'2017-01-12 16:47:23','角色删除',NULL,0,3,'角色删除',3,'system:role:deleteBatch','/admin/role/deleteBatch',2,'2017-01-18 14:12:03',6),(10,'2017-01-12 16:47:23','资源分配',NULL,0,3,'资源分配',4,'system:role:grant','/admin/role/grant/**',2,'2017-01-18 14:12:11',6),(11,'2017-01-17 11:21:12','资源管理',NULL,0,2,'资源管理',3,'system:resource:index','/admin/resource/index',1,'2017-01-17 11:21:42',NULL),(12,'2017-01-17 11:21:52','资源编辑',NULL,0,3,'资源编辑',1,'system:resource:edit','/admin/resource/edit*',2,'2017-01-17 11:22:36',11),(13,'2017-01-17 11:21:54','资源添加',NULL,0,3,'资源添加',2,'system:resource:add','/admin/resource/add',2,'2017-01-17 11:22:39',11),(14,'2017-01-17 11:21:54','资源删除',NULL,0,3,'资源删除',3,'system:resource:deleteBatch','/admin/resource/deleteBatch',2,'2017-01-18 14:12:31',11),(15,'2019-07-27 15:24:40','统计管理',NULL,0,1,'统计管理',1,'wechatLog','/admin/wechatLog',1,'2019-07-27 15:26:03',NULL),(17,'2019-07-27 16:14:12','统计删除',NULL,0,3,'统计删除',3,'system:wechatLog:deleteBatch','/admin/wechatLog/deleteBatch',2,'2019-07-27 16:14:12',15),(18,'2019-08-05 14:02:15','按微信账户统计',NULL,0,3,'账户统计',1,'system:wechatLog:accountList','/admin/wechatLog/accountlist',2,'2019-08-05 14:02:15',15),(19,'2019-08-05 14:02:59','按日期统计',NULL,0,3,'日期统计',1,'system:wechatLog:dateList','/admin/wechatLog/datelist',2,'2019-08-05 14:02:59',15),(20,'2019-08-05 15:48:35','首页统计',NULL,0,3,'首页统计',1,'system:wechatLog:datelistStat','/admin/wechatLog/datelistStat',2,'2019-08-05 15:48:35',15);
 /*!40000 ALTER TABLE `tb_resource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -104,7 +106,7 @@ CREATE TABLE `tb_role_resource` (
 
 LOCK TABLES `tb_role_resource` WRITE;
 /*!40000 ALTER TABLE `tb_role_resource` DISABLE KEYS */;
-INSERT INTO `tb_role_resource` VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12),(1,13),(1,14),(2,15),(2,17);
+INSERT INTO `tb_role_resource` VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12),(1,13),(1,14),(2,15),(2,17),(2,18),(2,19),(2,20);
 /*!40000 ALTER TABLE `tb_role_resource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -185,7 +187,7 @@ CREATE TABLE `tb_wechatlog` (
   `create_time` date DEFAULT NULL,
   `username` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -194,6 +196,7 @@ CREATE TABLE `tb_wechatlog` (
 
 LOCK TABLES `tb_wechatlog` WRITE;
 /*!40000 ALTER TABLE `tb_wechatlog` DISABLE KEYS */;
+INSERT INTO `tb_wechatlog` VALUES (1,'111','11','2019-07-27','test'),(2,'123','222','2019-07-28','test'),(3,'456','3333','2019-07-28','test'),(4,'123','2222','2019-07-28','test'),(6,'aaa','aaa111','2019-08-05','test'),(7,'aaa','aaa222','2019-08-05','test'),(8,'aaa','aaa333','2019-08-05','test'),(9,'aaa','aaa112','2019-08-05','test'),(10,'bbb','aaa112','2019-08-05','test'),(11,'bbb','aaa113','2019-08-05','test'),(12,'bbb','aaa114','2019-08-05','test'),(13,'bbb','aaa115','2019-08-05','test'),(14,'bbb','aaa116','2019-08-05','test'),(15,'ccc','aaa116','2019-08-05','test'),(16,'ccc','aaa117','2019-08-05','test'),(17,'ccc','aaa118','2019-08-05','test'),(18,'ccc','aaa119','2019-08-05','test'),(19,'ccc','aaa120','2019-08-05','test'),(20,'ccc','aaa121','2019-08-05','test'),(21,'ccc','aaa122','2019-08-05','test'),(22,'ccc','aaa123','2019-08-05','test'),(23,'ccc','aaa124','2019-08-05','test'),(24,'aaa','aaa125','2019-08-05','test'),(25,'aaa','aaa126','2019-08-05','test'),(26,'aaa','aaa127','2019-08-05','test');
 /*!40000 ALTER TABLE `tb_wechatlog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -214,4 +217,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-07-27 16:53:01
+-- Dump completed on 2019-08-05 16:36:42

@@ -1,9 +1,13 @@
 package net.sppan.base.service.impl;
 
 import java.util.Date;
+import java.util.List;
 
 import net.sppan.base.dao.IWechatLogDao;
+import net.sppan.base.dao.StaticsWechatDao;
 import net.sppan.base.dao.support.IBaseDao;
+import net.sppan.base.entity.StaticsByAccount;
+import net.sppan.base.entity.StaticsByDate;
 import net.sppan.base.entity.WechatLog;
 import net.sppan.base.service.IWechatLogService;
 import net.sppan.base.service.support.impl.BaseServiceImpl;
@@ -25,6 +29,9 @@ public class WechatLogServiceImpl extends BaseServiceImpl<WechatLog, Integer> im
 
 	@Autowired
 	private IWechatLogDao wechatLogDao;
+
+	@Autowired
+	private StaticsWechatDao staticsWechatDao;
 	
 	@Override
 	public IBaseDao<WechatLog, Integer> getBaseDao() {
@@ -33,7 +40,7 @@ public class WechatLogServiceImpl extends BaseServiceImpl<WechatLog, Integer> im
 
 	@Override
 	public Page<WechatLog> findAllByUsernameAndAccountContaining(String username, String account, PageRequest pageRequest) {
-		return wechatLogDao.findAllByUsernameAndAccountContainingOrderByCreateTimeDesc(username, account, pageRequest);
+		return wechatLogDao.findAllByUsernameAndAccountContainingOrderByCreateTimeDescIdDesc(username, account, pageRequest);
 	}
 
 	@Override
@@ -46,5 +53,16 @@ public class WechatLogServiceImpl extends BaseServiceImpl<WechatLog, Integer> im
 	public WechatLog findOneByUsernameAndAccountAndNickNameAndCreateTime(String username, String account, String nickName, Date createTime) {
 		return wechatLogDao.findOneByUsernameAndAccountAndNickNameAndCreateTime(username, account, nickName, createTime);
 	}
-	
+
+	@Override
+	public List<StaticsByAccount> getCountByAccount(String username) {
+		return staticsWechatDao.getCountByAccount(username);
+	}
+
+	@Override
+	public List<StaticsByDate> getCountByDate(String username) {
+		return staticsWechatDao.getCountByDate(username);
+	}
+
+
 }
