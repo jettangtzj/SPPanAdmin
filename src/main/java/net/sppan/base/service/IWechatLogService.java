@@ -6,6 +6,8 @@ import java.util.List;
 
 import net.sppan.base.entity.StaticsByAccount;
 import net.sppan.base.entity.StaticsByDate;
+import net.sppan.base.entity.StaticsByUsername;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
@@ -52,4 +54,10 @@ public interface IWechatLogService extends IBaseService<WechatLog,Integer> {
 	 * @return
 	 */
 	public List<StaticsByDate> getCountByDate(String username);
+	
+	/**
+	 * group by username
+	 * @return
+	 */
+	public List<StaticsByUsername> getCountByUsername();
 }

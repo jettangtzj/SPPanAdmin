@@ -9,7 +9,6 @@ import net.sppan.base.entity.Role;
 import net.sppan.base.entity.User;
 import net.sppan.base.service.IUserService;
 
-import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -22,9 +21,7 @@ import org.apache.shiro.authc.credential.AllowAllCredentialsMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
-import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.PrincipalCollection;
-import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -92,10 +89,6 @@ public class MyRealm extends AuthorizingRealm {
 		}
 		
 		SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(user, password, getName());
-		//
-		Subject currentUser = SecurityUtils.getSubject();
-		Session session = currentUser.getSession();
-		session.setAttribute("USERNAME", username);
 		//
 		return info;
 	}

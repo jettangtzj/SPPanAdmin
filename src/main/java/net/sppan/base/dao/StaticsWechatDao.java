@@ -2,6 +2,7 @@ package net.sppan.base.dao;
 
 import net.sppan.base.entity.StaticsByAccount;
 import net.sppan.base.entity.StaticsByDate;
+import net.sppan.base.entity.StaticsByUsername;
 import net.sppan.base.entity.WechatLog;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -28,4 +29,12 @@ public interface StaticsWechatDao extends CrudRepository<WechatLog, Long> {
                     "WHERE v.username = :username " +
                     "GROUP BY v.create_time ORDER BY v.create_time DESC LIMIT 7")
     List<StaticsByDate> getCountByDate(@Param("username") String username);
+    
+    
+    @Query(value =
+            "SELECT v.username AS username, COUNT(v) AS count " +
+                    "FROM WechatLog v " +
+                    "GROUP BY v.username ")
+    List<StaticsByUsername> getCountByUsername();
+    
 }

@@ -8,6 +8,7 @@ import net.sppan.base.dao.StaticsWechatDao;
 import net.sppan.base.dao.support.IBaseDao;
 import net.sppan.base.entity.StaticsByAccount;
 import net.sppan.base.entity.StaticsByDate;
+import net.sppan.base.entity.StaticsByUsername;
 import net.sppan.base.entity.WechatLog;
 import net.sppan.base.service.IWechatLogService;
 import net.sppan.base.service.support.impl.BaseServiceImpl;
@@ -62,6 +63,11 @@ public class WechatLogServiceImpl extends BaseServiceImpl<WechatLog, Integer> im
 	@Override
 	public List<StaticsByDate> getCountByDate(String username) {
 		return staticsWechatDao.getCountByDate(username);
+	}
+	
+	@Override
+	public List<StaticsByUsername> getCountByUsername() {
+		return staticsWechatDao.getCountByUsername();
 	}
 
 

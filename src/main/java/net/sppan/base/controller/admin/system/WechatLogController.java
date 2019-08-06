@@ -1,9 +1,10 @@
 package net.sppan.base.controller.admin.system;
 
 import net.sppan.base.entity.StaticsByDate;
+import net.sppan.base.entity.StaticsByUsername;
+import net.sppan.base.entity.User;
+
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.session.Session;
-import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -38,12 +39,10 @@ public class WechatLogController extends BaseController {
 	public Page<WechatLog> list(
 			@RequestParam(value="searchText",required=false) String searchText
 			) {
-		Subject currentUser = SecurityUtils.getSubject();
-		Session session = currentUser.getSession();
-		String username = (String)session.getAttribute("USERNAME");
+		User currentUser = (User)SecurityUtils.getSubject().getPrincipal();
 		if(searchText == null)
 			searchText = "%";
-		Page<WechatLog> page = wechatLogService.findAllByUsernameAndAccountContaining(username, searchText, getPageRequest());
+		Page<WechatLog> page = wechatLogService.findAllByUsernameAndAccountContaining(currentUser.getUserName(), searchText, getPageRequest());
 		return page;
 	}
 	
@@ -63,31 +62,30 @@ public class WechatLogController extends BaseController {
 
 	@RequestMapping(value = { "/accountlist" })
 	public String accountList(ModelMap map) {
-		Subject currentUser = SecurityUtils.getSubject();
-		Session session = currentUser.getSession();
-		String username = (String)session.getAttribute("USERNAME");
-		map.put("LIST", wechatLogService.getCountByAccount(username));
+		User currentUser = (User)SecurityUtils.getSubject().getPrincipal();
+		map.put("LIST", wechatLogService.getCountByAccount(currentUser.getUserName()));
 		return "admin/wechatLog/accountList";
 	}
 
 
 	@RequestMapping(value = { "/datelist" })
 	public String dateList(ModelMap map) {
-		Subject currentUser = SecurityUtils.getSubject();
-		Session session = currentUser.getSession();
-		String username = (String)session.getAttribute("USERNAME");
-		map.put("LIST", wechatLogService.getCountByDate(username));
+		User currentUser = (User)SecurityUtils.getSubject().getPrincipal();
+		map.put("LIST", wechatLogService.getCountByDate(currentUser.getUserName()));
 		return "admin/wechatLog/dateList";
 	}
 
 	@RequestMapping(value = { "/datelistStat" })
 	@ResponseBody
 	public JsonResult dateListStat() {
-		Subject currentUser = SecurityUtils.getSubject();
-		Session session = currentUser.getSession();
-		String username = (String)session.getAttribute("USERNAME");
-		List<StaticsByDate> list = wechatLogService.getCountByDate(username);
-		return JsonResult.success(list);
+		User currentUser = (User)SecurityUtils.getSubject().getPrincipal();
+		if(SecurityUtils.getSubject().hasRole("administrator")) {
+			List<StaticsByUsername> list = wechatLogService.getCountByUsername();
+			return JsonResult.success(list);
+		}else{
+			List<StaticsByDate> list = wechatLogService.getCountByDate(currentUser.getUserName());
+			return JsonResult.success(list);
+		}
 	}
 	
 }

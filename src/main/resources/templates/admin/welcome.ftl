@@ -23,6 +23,8 @@
         $.getJSON('${ctx!}/admin/wechatLog/datelistStat', function (data) {
             if(data.code == 0)
             {
+            	<!-- 一般角色 -->
+            	<@shiro.hasRole name="normal">
                 var xdata = new Array();
                 var ydata = new Array();
                 for(var i = data.data.length-1;i>=0;i--){
@@ -59,7 +61,46 @@
                         data: ydata
                     }]
                 });
-
+				</@shiro.hasRole>
+				<!-- 管理员角色 -->
+				<@shiro.hasRole name="administrator">
+				var xdata = new Array();
+                var ydata = new Array();
+                for(var i = data.data.length-1;i>=0;i--){
+                    xdata.push(data.data[i].username);
+                    ydata.push(data.data[i].count);
+                }
+                // 填入数据
+                myChart.setOption({
+                    title: {
+                        text: '各个用户的加粉数量统计'
+                    },
+                    tooltip: {show: true,trigger: 'item'},
+                    toolbox: {
+                        show : true,
+                        feature : {
+                            mark : {show: true},
+                            dataView : {show: true, readOnly: true},
+                            magicType : {show: true, type: ['line', 'bar']},
+                            restore : {show: true},
+                            saveAsImage : {show: true}
+                        }
+                    },
+                    legend: {
+                        data:['数量']
+                    },
+                    xAxis: {
+                        data: xdata
+                    },
+                    yAxis: {
+                    },
+                    series: [{
+                        name: '数量',
+                        type: 'bar',
+                        data: ydata
+                    }]
+                });
+				</@shiro.hasRole>
             }
 
         });
